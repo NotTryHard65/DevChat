@@ -1,0 +1,13 @@
+.click-popup {
+    background-image: url("/assets/More_Vertical.svg");
+}
+
+.click-popup {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    filter: invert(1);
+}

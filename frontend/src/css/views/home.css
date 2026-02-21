@@ -1,0 +1,119 @@
+.vertical-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+}
+
+.v-header {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: black;
+    flex-shrink: 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.chats-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.logo_settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.text_logo {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 700;
+}
+
+.settings-btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-btn::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url("/assets/Hamburger_MD.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.horizontal-container {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    width: 75%;
+    height: 80px;
+
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    z-index: 10;
+}
+
+.chat-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.chat-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.time {
+    color: #888;
+    font-size: 14px;
+}
+
+.chat-fun {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.search-chat {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    filter: invert(1);
+}
+
+.search-chat {
+    background-image: url("/assets/Search_Magnifying_Glass.svg");
+}
