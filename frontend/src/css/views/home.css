@@ -50,17 +50,6 @@
     justify-content: center;
 }
 
-.settings-btn::after {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-
-    background-image: url("/assets/Hamburger_MD.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30px;
-}
 
 .horizontal-container {
     position: fixed;
@@ -79,6 +68,11 @@
     z-index: 10;
 }
 
+.chat-info {
+    display: flex;
+    flex-direction: row;
+}
+
 .chat-icon {
     width: 40px;
     height: 40px;
@@ -91,6 +85,7 @@
     font-size: 18px;
     margin-left: 15px;
     margin-right: auto;
+    padding-top: 5px;
 }
 
 .time {
@@ -101,19 +96,18 @@
 .chat-fun {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
 }
 
 .search-chat {
     width: 40px;
     height: 40px;
+}
+
+#search-chat, #click-popup {
     cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 25px;
     filter: invert(1);
 }
 
-.search-chat {
-    background-image: url("/assets/Search_Magnifying_Glass.svg");
-}
+
+
